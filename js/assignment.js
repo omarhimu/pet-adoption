@@ -33,7 +33,7 @@ const showSpinner = (isVisible) => {
 };
 
 const sortPetsByPrice = () => {
-    displayPets([...allPetsData].sort((a, b) => a.price - b.price));
+    displayPets([...allPetsData].sort((a, b) => b.price - a.price));
 };
 
 document.getElementById('sortButton').addEventListener('click', sortPetsByPrice);
